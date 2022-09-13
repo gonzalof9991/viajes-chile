@@ -1,0 +1,63 @@
+
+:root{
+    --transition: all .4s ease;
+    --white: #ffffff;
+    --gray: rgb(150, 150, 150);
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.nav-link{
+    color: var(--white) !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    background: #0e0e0e45;
+    cursor: pointer;
+}
+
+
+
+#carousel{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+/* Clases */
+
+.w-10 {
+  width: 10%;
+}
+
+.bg-light {
+  background: ;
+}
+
+.bg-transp {
+  background: #0e0e0e45;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: var(--white);
+}
+
