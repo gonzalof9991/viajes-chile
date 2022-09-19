@@ -38,6 +38,20 @@ header {
 
 /* Clases */
 
+.card{
+    transition: var(--transition);
+}
+
+.card:hover {
+    cursor: pointer;
+    top: -5%;
+}
+
+
+.card-img-top{
+    height: 250px;
+}
+
 .w-10 {
     width: 10%;
 }
@@ -64,7 +78,15 @@ header {
 
 
 
+@media only screen and (max-width: 600px) {
+    #quienesSomos {
+        display: none;
+    }
 
+    .card{
+        margin-bottom: 8%;
+    }
+}
 
 @media only screen and (max-width: 1200px) {}
 
