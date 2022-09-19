@@ -2,6 +2,7 @@
     --transition: all .4s ease;
     --white: #ffffff;
     --gray: rgb(150, 150, 150);
+    --black: #212529;
 
 }
 
@@ -15,6 +16,27 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1111111111111;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--white);
+}
+
+
+footer{
+    padding: 30px 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer .fa{
+    font-size: 30px;
+    margin-right: 3%;;
 }
 
 .nav-link {
@@ -36,10 +58,16 @@ header {
 
 
 
+
+
 /* Clases */
 
 .card{
     transition: var(--transition);
+}
+
+.div-icons{
+    text-align: end;
 }
 
 .card:hover {
@@ -86,22 +114,9 @@ header {
     .card{
         margin-bottom: 8%;
     }
+    .div-icons{
+        margin-top: 3%;
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 1200px) {}
-
-@media only screen and (min-width: 1201px) and (max-width: 2000px) {}
-
-
-@keyframes move {
-    from {
-        position: absolute;
-        left: 0px;
-    }
-
-    to {
-        position: absolute;
-        left: 90vw;
-    }
-
-}
