@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --transition: all .4s ease;
     --white: #ffffff;
     --gray: rgb(150, 150, 150);
@@ -7,31 +6,32 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    scroll-behavior: smooth;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
+    z-index: 1111111111111;
 }
 
-.nav-link{
+.nav-link {
     color: var(--white) !important;
     transition: var(--transition);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background: #0e0e0e45;
     cursor: pointer;
 }
 
 
 
-#carousel{
-    position: absolute;
+#carousel {
+    position: relative;
     top: 0;
-    z-index: -1;
 }
 
 
@@ -39,25 +39,47 @@ header{
 /* Clases */
 
 .w-10 {
-  width: 10%;
+    width: 10%;
 }
 
-.bg-light {
-  background: ;
+.w-30px{
+    width: 30px;
 }
 
 .bg-transp {
-  background: #0e0e0e45;
-  backdrop-filter: blur(12px);
+    background: #0e0e0e45;
+    backdrop-filter: blur(12px);
 }
 
 .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 0;
-  align-items: center;
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
 }
 
-.navbar-brand, .navbar-brand:hover {
+.navbar-brand,
+.navbar-brand:hover {
     color: var(--white);
 }
 
+
+
+
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (min-width: 1201px) and (max-width: 2000px) {}
+
+
+@keyframes move {
+    from {
+        position: absolute;
+        left: 0px;
+    }
+
+    to {
+        position: absolute;
+        left: 90vw;
+    }
+
+}
