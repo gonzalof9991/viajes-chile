@@ -5,15 +5,4 @@ $(document).ready( function(){
     alert("El correo fue enviado correctamente...");
    })
 
-
-  // Boton Email
-  $(".card-title").click(() => {
-    $(".card-text").toggle("slow");
-   })
-
-
-
-   function changeTitle(){
-    alert('Acaa')
-   }
 });
